@@ -6,8 +6,12 @@ There are four scenarios reported for how cid may be assigned by GA in an AMP:
 https://developers.google.com/analytics/devguides/collection/amp-analytics/client-id
 
 To begin answering the question of how Segment's `analytics.js` interaction, these websites have been composed.
+
+HTML5 (natural): https://amp-natural.firebaseapp.com/
+AMP html: https://amp-research.firebaseapp.com/
+
 They are hosted on Firebase but that is only trivially important.
-By composing an HTML5 page (natural), an AMP, and linking them together with canonical URLs,
+Linked by canonical URLs.
 
 ### Working Plans
 
