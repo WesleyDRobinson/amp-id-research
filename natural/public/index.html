@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="canonical" href="index.html">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!--Make discoverable-->
+    <link rel="amphtml" href="https://amp-research.firebaseapp.com/">
+
+    <title>(natural) Segment AMP Research</title>
+    <style>
+        #main {
+            margin: 2em;
+        }
+    </style>
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+        analytics.load("Gti45xFmQunnKiJLAEi1LnItzhYjvww2");
+        analytics.page('AMP Research - Natural Page', {
+          type: 'natural',
+          author: 'wesley'
+        });
+      }}();
+    </script>
+</head>
+<body>
+<div id="main">
+    <h1>Segment AMP Research</h1>
+    <p>Natural HTML</p>
+    <button id="event-button">Trigger Event</button><br/>
+    <a href="https://amp-research.firebaseapp.com/" onclick="window.analytics.track('Link to AMP Clicked')">Visit the AMP HTML version of this page</a>
+</div>
+<script>
+  document.getElementById('event-button').addEventListener('click', (e) => {
+    e.preventDefault();
+    analytics.track('Natural HTML Track Event', {
+      type: 'natural',
+      trigger: 'Button Click'
+    })
+
+  })
+</script>
+</body>
+</html>

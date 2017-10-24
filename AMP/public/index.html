@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ⚡>
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <!--Make discoverable-->
+    <link rel="canonical" href="https://amp-natural.firebaseapp.com/">
+
+    <title>(AMP) Segment AMP Research</title>
+
+    <style amp-custom>
+        #main {
+            margin: 2em;
+        }
+    </style>
+
+</head>
+<body>
+<div id="main">
+    <h1>Segment AMP Research</h1>
+    <p>AMP enabled</p>
+    <button id="event-button">Trigger Event</button><br/>
+    <a href="https://amp-natural.firebaseapp.com/">Visit the natural HTML version of this page</a>
+</div>
+
+<!--Page Method-->
+<amp-analytics type="segment">
+    <script type="application/json">
+        {
+            "vars": {
+                "writeKey": "Gti45xFmQunnKiJLAEi1LnItzhYjvww2",
+                "name": "AMP Research - AMP Page"
+            },
+            "extraUrlParams": {
+                "properties.type": "AMP",
+                "properties.author": "wesley"
+            }
+        }
+    </script>
+</amp-analytics>
+
+<!--Track Method-->
+<amp-analytics type="segment">
+    <script type="application/json">
+        {
+            "vars": {
+                "writeKey": "Gti45xFmQunnKiJLAEi1LnItzhYjvww2",
+                "name": "AMP Research - AMP Track"
+            },
+            "extraUrlParams": {
+                "properties.type": "AMP",
+                "properties.trigger": "Button Click"
+            },
+            "triggers": {
+                "click": {
+                    "on": "click",
+                    "selector": "#event-button",
+                    "request": "track",
+                    "vars": {
+                        "event": "AMP HTML Track Event"
+                    }
+                }
+            }
+        }
+    </script>
+</amp-analytics>
+</body>
+</html>
